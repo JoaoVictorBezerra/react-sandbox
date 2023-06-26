@@ -1,18 +1,22 @@
 import reactLogo from './assets/react.svg'
 import './App.css'
-import { main } from './Promises'
+import { promiseAll } from './Sandbox/Promises'
+import { destructuring } from './Sandbox/Destructuring'
 function App() {
 
 
   return (
     <>
+      <a href="https://react.dev" target="_blank">
+        <img src={reactLogo} className="logo react" alt="React logo" />
+      </a>
       <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h3>Promise</h3>
+        <button onClick={promiseAll}>Requisição</button>
       </div>
       <div>
-        <button onClick={main}>Requisição</button>
+        <h3>Destructuring</h3>
+        <button onClick={destructuring}>Desestruturar</button>
       </div>
     </>
   )

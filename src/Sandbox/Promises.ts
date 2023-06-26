@@ -20,7 +20,7 @@ export const loadTodos = () => {
   });
 };
 
-export const main = async () => {
+export const promiseAll = async () => {
   console.time("responseTime");
   //   const users = await loadUsers();
   //   const posts = await loadPosts();
